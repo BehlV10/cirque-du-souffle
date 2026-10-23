@@ -48,12 +48,16 @@ export function ProductQuickView({ product, onClose }: ProductQuickViewProps) {
         </button>
 
         {/* Media Column */}
-        <div className="relative md:w-1/2 aspect-square md:aspect-auto min-h-[300px] bg-neutral-950">
+        <div
+          className="relative md:w-1/2 aspect-square md:aspect-auto min-h-[300px] h-72 md:h-auto bg-neutral-950"
+          style={{ minHeight: '300px', position: 'relative' }}
+        >
           <Image
             src={product.image}
             alt={product.name}
             fill
             className="object-cover"
+            style={{ objectFit: 'cover' }}
           />
           {product.badge && (
             <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-500 text-neutral-950 text-xs font-bold tracking-wide uppercase shadow-lg flex items-center gap-1">

@@ -28,13 +28,17 @@ export function BioAndPress() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Bio Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
-          <div className="lg:col-span-5 relative">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-neutral-800 shadow-2xl">
+          <div className="lg:col-span-5 relative w-full">
+            <div
+              className="relative w-full h-[400px] sm:h-[480px] rounded-3xl overflow-hidden border border-neutral-800 shadow-2xl"
+              style={{ aspectRatio: '4 / 5', minHeight: '380px', maxHeight: '500px', position: 'relative' }}
+            >
               <Image
                 src="https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1589333141650-CU40Q1KK58TC3WVFXSY0/IMG-20200219-WA0009-square.jpg"
                 alt="Chef T Lawrence-Simon (Photo Credit: Jeremy Kohm)"
                 fill
                 className="object-cover"
+                style={{ objectFit: 'cover' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">

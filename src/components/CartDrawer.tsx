@@ -138,12 +138,16 @@ export function CartDrawer() {
                     key={item.cartItemId}
                     className="flex gap-4 p-3 rounded-2xl bg-neutral-950/60 border border-neutral-800/80 items-center"
                   >
-                    <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-neutral-800 shrink-0">
+                    <div
+                      className="relative w-16 h-16 rounded-xl overflow-hidden bg-neutral-800 shrink-0"
+                      style={{ width: '64px', height: '64px', minWidth: '64px', minHeight: '64px', position: 'relative' }}
+                    >
                       <Image
                         src={item.product.image}
                         alt={item.product.name}
                         fill
                         className="object-cover"
+                        style={{ objectFit: 'cover' }}
                       />
                     </div>
 

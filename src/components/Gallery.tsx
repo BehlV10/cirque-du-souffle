@@ -64,7 +64,8 @@ export function Gallery() {
           {images.map((img, i) => (
             <div
               key={i}
-              className={`group relative rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-950 ${img.span}`}
+              className={`group relative rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-950 w-full h-64 sm:h-72 md:h-full ${img.span}`}
+              style={{ minHeight: '260px', position: 'relative' }}
             >
               <Image
                 src={img.src}
@@ -72,6 +73,7 @@ export function Gallery() {
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
+                style={{ objectFit: 'cover' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity" />
 

@@ -82,15 +82,19 @@ export function Hero() {
           </div>
 
           {/* Right Column: Editorial Framed Showcase of Official Brand Artwork */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto max-w-md rounded-3xl p-2 bg-gradient-to-b from-amber-500/30 via-neutral-800 to-amber-500/10 shadow-2xl shadow-amber-950/40">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800">
+          <div className="lg:col-span-5 relative w-full">
+            <div className="relative mx-auto max-w-md w-full rounded-3xl p-2 bg-gradient-to-b from-amber-500/30 via-neutral-800 to-amber-500/10 shadow-2xl shadow-amber-950/40">
+              <div
+                className="relative w-full h-[400px] sm:h-[480px] rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800"
+                style={{ aspectRatio: '4 / 5', minHeight: '380px', maxHeight: '500px', position: 'relative' }}
+              >
                 <Image
                   src="https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/d75de881-4803-417f-a730-33ab8df6cd18/Cirque+du+Souffl%C3%A9+%283%29.png"
                   alt="Cirque du Soufflé - Chef T Lawrence-Simon"
                   fill
                   priority
                   className="object-cover object-center hover:scale-105 transition-transform duration-700"
+                  style={{ objectFit: 'cover' }}
                 />
                 
                 {/* Subtle vignette overlay */}

@@ -13,4 +13,30 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Bulletproof image constraints so no image can ever blow up */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Explicit aspect ratios */
+.aspect-square {
+  aspect-ratio: 1 / 1 !important;
+}
+
+.aspect-\[4\/5\] {
+  aspect-ratio: 4 / 5 !important;
+}
+
+/* Enforce containment on Next.js fill images */
+[data-nimg="fill"] {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }

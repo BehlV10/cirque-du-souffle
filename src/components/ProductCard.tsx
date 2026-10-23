@@ -36,13 +36,18 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Product Image Container */}
-      <div className="relative aspect-square w-full overflow-hidden bg-neutral-950 cursor-pointer" onClick={() => onQuickView(product)}>
+      <div
+        className="relative w-full h-64 sm:h-72 overflow-hidden bg-neutral-950 cursor-pointer"
+        style={{ aspectRatio: '1 / 1', minHeight: '260px', position: 'relative' }}
+        onClick={() => onQuickView(product)}
+      >
         <Image
           src={isHovered && product.hoverImage ? product.hoverImage : product.image}
           alt={product.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          style={{ objectFit: 'cover' }}
         />
 
         {/* Badge */}
