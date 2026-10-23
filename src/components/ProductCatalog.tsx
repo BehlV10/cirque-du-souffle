@@ -7,7 +7,7 @@ import { ProductQuickView } from './ProductQuickView';
 import { Sparkles } from 'lucide-react';
 
 export function ProductCatalog() {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'confections' | 'merch' | 'experiences'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'apparel' | 'accessories'>('all');
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
 
   const filteredProducts = activeCategory === 'all'
@@ -15,10 +15,9 @@ export function ProductCatalog() {
     : PRODUCTS.filter((p) => p.category === activeCategory);
 
   const categories = [
-    { id: 'all', label: 'All Creations' },
-    { id: 'confections', label: 'Artisan Chocolates & Pastry' },
-    { id: 'merch', label: 'Apparel & Cirque Merch' },
-    { id: 'experiences', label: 'Tasting Experiences' },
+    { id: 'all', label: 'All Items' },
+    { id: 'apparel', label: 'Tanks & Tees' },
+    { id: 'accessories', label: 'Totes & Towels' },
   ];
 
   return (
@@ -28,13 +27,13 @@ export function ProductCatalog() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>The Cirque Collection</span>
+            <span>Official Merch Store</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-white mb-4">
-            Handcrafted Confections & Curated Merch
+            Cirque du Soufflé Gear
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base font-light">
-            Indulge in seasonal chocolate bonbon releases, French macarons, and limited edition circus aerialist apparel designed by Chef T.
+            Wear the intersection of aerial performance and confectionery passion. Featuring original illustrations by Caroline Hu and Jun.
           </p>
         </div>
 
@@ -56,7 +55,7 @@ export function ProductCatalog() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {filteredProducts.map((product) => (
             <ProductCard
               key={product.id}

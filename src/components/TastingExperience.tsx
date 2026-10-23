@@ -1,24 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { Calendar, Users, Wine, Sparkles, Check, ArrowRight } from 'lucide-react';
-import { useCart } from '@/context/CartContext';
-import { PRODUCTS } from '@/data/products';
+import React from 'react';
+import { Calendar, Users, Wine, Sparkles, ArrowRight, MessageSquare } from 'lucide-react';
 
 export function TastingExperience() {
-  const { addToCart } = useCart();
-  const [booked, setBooked] = useState(false);
-
-  const tastingProduct = PRODUCTS.find((p) => p.id === 'tasting-menu-experience')!;
-
-  const handleBookDeposit = () => {
-    if (tastingProduct) {
-      addToCart(tastingProduct, undefined, undefined, 1);
-      setBooked(true);
-      setTimeout(() => setBooked(false), 2000);
-    }
-  };
 
   const courses = [
     {
@@ -86,29 +71,21 @@ export function TastingExperience() {
             </div>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={handleBookDeposit}
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:brightness-110 text-neutral-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl shadow-amber-500/20 transition-all"
+              <a
+                href="#contact"
+                className="px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:brightness-110 text-neutral-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl shadow-amber-500/20 transition-all group"
               >
-                {booked ? (
-                  <>
-                    <Check className="w-4 h-4" />
-                    <span>Deposit Added to Bag!</span>
-                  </>
-                ) : (
-                  <>
-                    <Calendar className="w-4 h-4" />
-                    <span>Book Tasting Deposit • $75</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </>
-                )}
-              </button>
+                <Calendar className="w-4 h-4" />
+                <span>Reserve Tasting Experience (Inquire)</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
 
               <a
                 href="#contact"
-                className="px-6 py-4 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-amber-400 text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center transition-colors"
+                className="px-6 py-4 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-amber-400 text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
               >
-                Inquire for Private Events
+                <MessageSquare className="w-4 h-4 text-amber-400" />
+                <span>Private Party Inquiry (Up to 12)</span>
               </a>
             </div>
           </div>
