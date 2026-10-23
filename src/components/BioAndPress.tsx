@@ -31,8 +31,8 @@ export function BioAndPress() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-neutral-800 shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80"
-                alt="Chef T Lawrence-Simon"
+                src="https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1589333141650-CU40Q1KK58TC3WVFXSY0/IMG-20200219-WA0009-square.jpg"
+                alt="Chef T Lawrence-Simon (Photo Credit: Jeremy Kohm)"
                 fill
                 className="object-cover"
               />
@@ -44,7 +44,7 @@ export function BioAndPress() {
                 <h3 className="text-2xl font-serif font-bold text-white">
                   T Lawrence-Simon
                 </h3>
-                <p className="text-xs text-neutral-400">Somerville, Massachusetts</p>
+                <p className="text-xs text-neutral-400">Somerville, Massachusetts • Photo: Jeremy Kohm</p>
               </div>
             </div>
           </div>

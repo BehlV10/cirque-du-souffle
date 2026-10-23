@@ -27,8 +27,8 @@ export const PRODUCTS: Product[] = [
     price: 38,
     badge: 'Signature Drop',
     description: 'Hand-cast, glossy jewel-finish cocoa shells hand-painted with colored cocoa butter. Filled with dual-layer ganaches and pralinés crafted from single-origin Valrhona and French fruit purees.',
-    image: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1481391319946-24c5b1698d89?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1686197254752-ELJGQHXE3QJVW10IWNYL/20230530104417_IMG_1271-01.jpeg',
+    hoverImage: 'https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1686196904750-XHZEMNAVELXN1I94YD4N/POUR+SHOT+less+bright+background.jpg',
     details: [
       '3x Smoked Tahitian Vanilla Ganache & Salted Caramel',
       '3x Passionfruit Reduction & Gianduja Praline',
@@ -44,8 +44,8 @@ export const PRODUCTS: Product[] = [
     price: 42,
     badge: 'Limited Run',
     description: 'Feather-light French almond meringue shells with precision pied, inspired by Chef T’s training under Chef Amaury Guichon. Balanced with rich emulsions and house fruit reductions.',
-    image: 'https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1614643673778-QUUUTOK957SKI384MWQC/MacaronTitle2.jpeg',
+    hoverImage: 'https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1686197330861-WVK5DMKFPQ4JSBFLITW3/LemonMeringueTart.jpeg',
     details: [
       'Pistachio Sicilian Crunch',
       'Yuzu White Chocolate Buttercream',
@@ -151,7 +151,7 @@ export const PRODUCTS: Product[] = [
     price: 75,
     badge: 'Chef Experience',
     description: 'Reserve your seat for Chef T’s theatrical multi-course dessert dining experience in Somerville, MA. Full sensory exploration merging culinary theatrics and boundary-pushing patisserie.',
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1686196904750-XHZEMNAVELXN1I94YD4N/POUR+SHOT+less+bright+background.jpg',
     details: [
       'Includes 5 progressive dessert courses & palate cleansers',
       'Optional beverage & champagne pairing available at seat',
