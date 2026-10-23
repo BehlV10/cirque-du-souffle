@@ -46,7 +46,7 @@ export function Navbar() {
               <span className="font-serif tracking-widest text-lg sm:text-xl font-bold bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent block">
                 CIRQUE DU SOUFFLÉ
               </span>
-              <span className="text-[10px] uppercase tracking-widest text-neutral-400 block -mt-1 font-sans">
+              <span className="text-[10px] uppercase tracking-widest text-neutral-300 font-medium block -mt-1 font-sans">
                 Chef T Lawrence-Simon
               </span>
             </div>
@@ -58,7 +58,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-neutral-300 hover:text-amber-400 transition-colors uppercase tracking-wider relative py-1 group"
+                className="text-sm font-medium text-neutral-200 hover:text-amber-300 transition-colors uppercase tracking-wider relative py-1 group"
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full" />

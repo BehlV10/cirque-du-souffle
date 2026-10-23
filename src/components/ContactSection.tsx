@@ -50,37 +50,37 @@ export function ContactSection() {
               Let’s Craft Something Unforgettable
             </h2>
 
-            <p className="text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
+            <p className="text-neutral-200 text-sm sm:text-base font-normal leading-relaxed">
               Inquire about private dessert tastings, bespoke wedding and showpiece orders, corporate demonstrations, or media and television appearances.
             </p>
 
             <div className="space-y-4 pt-4 border-t border-neutral-800">
-              <div className="flex items-center gap-3 text-neutral-300">
+              <div className="flex items-center gap-3 text-neutral-200">
                 <div className="p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-amber-400">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-neutral-400 block">Based in</span>
+                  <span className="text-xs text-neutral-300 font-medium block">Based in</span>
                   <span className="text-sm font-semibold text-white">Somerville, Massachusetts</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-neutral-300">
+              <div className="flex items-center gap-3 text-neutral-200">
                 <div className="p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-amber-400">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-neutral-400 block">Direct Inquiries</span>
+                  <span className="text-xs text-neutral-300 font-medium block">Direct Inquiries</span>
                   <span className="text-sm font-semibold text-white">cheft@chef-t.com</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-neutral-300">
+              <div className="flex items-center gap-3 text-neutral-200">
                 <div className="p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-amber-400">
                   <InstagramIcon className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-neutral-400 block">Social</span>
+                  <span className="text-xs text-neutral-300 font-medium block">Social</span>
                   <a
                     href="https://instagram.com/cirquedusouffle"
                     target="_blank"
@@ -98,7 +98,7 @@ export function ContactSection() {
               <h4 className="font-serif text-base font-bold text-white mb-1">
                 The Sweet Cirque Club
               </h4>
-              <p className="text-xs text-neutral-400 font-light mb-4">
+              <p className="text-xs text-neutral-200 font-normal mb-4">
                 Be the first to hear about seasonal chocolate drops, tasting menu seat releases, and macaron masterclasses.
               </p>
 
@@ -115,7 +115,7 @@ export function ContactSection() {
                     placeholder="Enter your email"
                     value={newsletterEmail}
                     onChange={(e) => setNewsletterEmail(e.target.value)}
-                    className="flex-1 px-3 py-2 bg-neutral-950 border border-neutral-700/80 rounded-xl text-xs text-white placeholder-neutral-500 focus:border-amber-400 focus:outline-none"
+                    className="flex-1 px-3 py-2 bg-neutral-950 border border-neutral-700/80 rounded-xl text-xs text-white placeholder-neutral-400 focus:border-amber-400 focus:outline-none"
                   />
                   <button
                     type="submit"
@@ -138,7 +138,7 @@ export function ContactSection() {
                 <h3 className="font-serif text-2xl font-bold text-white">
                   Message Dispatched to Chef T
                 </h3>
-                <p className="text-xs text-neutral-400 max-w-sm mx-auto">
+                <p className="text-xs text-neutral-200 font-normal max-w-sm mx-auto">
                   Thank you for reaching out! We typically respond within 24–48 hours regarding tasting availability and custom commissions.
                 </p>
               </div>
@@ -150,7 +150,7 @@ export function ContactSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-xs font-semibold uppercase tracking-wider text-neutral-400 block mb-1">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-neutral-200 block mb-1">
                       Your Name
                     </label>
                     <input
@@ -159,11 +159,11 @@ export function ContactSection() {
                       placeholder="e.g. Audrey Hepburn"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-950 border border-neutral-800 rounded-xl text-sm text-white placeholder-neutral-600 focus:border-amber-400 focus:outline-none"
+                      className="w-full px-4 py-3 bg-neutral-950 border border-neutral-700 rounded-xl text-sm text-white placeholder-neutral-400 focus:border-amber-400 focus:outline-none"
                     />
                   </div>
                   <div>
-                    <label className="text-xs font-semibold uppercase tracking-wider text-neutral-400 block mb-1">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-neutral-200 block mb-1">
                       Email Address
                     </label>
                     <input
@@ -172,19 +172,19 @@ export function ContactSection() {
                       placeholder="e.g. audrey@example.com"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-950 border border-neutral-800 rounded-xl text-sm text-white placeholder-neutral-600 focus:border-amber-400 focus:outline-none"
+                      className="w-full px-4 py-3 bg-neutral-950 border border-neutral-700 rounded-xl text-sm text-white placeholder-neutral-400 focus:border-amber-400 focus:outline-none"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-400 block mb-1">
+                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-200 block mb-1">
                     Inquiry Type
                   </label>
                   <select
                     value={form.inquiryType}
                     onChange={(e) => setForm({ ...form, inquiryType: e.target.value })}
-                    className="w-full px-4 py-3 bg-neutral-950 border border-neutral-800 rounded-xl text-sm text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full px-4 py-3 bg-neutral-950 border border-neutral-700 rounded-xl text-sm text-white focus:border-amber-400 focus:outline-none"
                   >
                     <option value="Private Tasting Experience">Private Tasting Experience (12 guests)</option>
                     <option value="Custom Bonbon & Chocolate Orders">Custom Bonbon & Chocolate Orders</option>
@@ -195,7 +195,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-400 block mb-1">
+                  <label className="text-xs font-semibold uppercase tracking-wider text-neutral-200 block mb-1">
                     Details / Dates
                   </label>
                   <textarea
@@ -204,7 +204,7 @@ export function ContactSection() {
                     placeholder="Tell us about your event, desired dates, or chocolate ideas..."
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full px-4 py-3 bg-neutral-950 border border-neutral-800 rounded-xl text-sm text-white placeholder-neutral-600 focus:border-amber-400 focus:outline-none"
+                    className="w-full px-4 py-3 bg-neutral-950 border border-neutral-700 rounded-xl text-sm text-white placeholder-neutral-400 focus:border-amber-400 focus:outline-none"
                   />
                 </div>
 

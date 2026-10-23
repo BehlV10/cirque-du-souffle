@@ -116,7 +116,7 @@ export function BioAndPress() {
                 <h3 className="text-2xl font-serif font-bold text-white">
                   T Lawrence-Simon
                 </h3>
-                <p className="text-xs text-neutral-400">Somerville, Massachusetts • Photo: Jeremy Kohm</p>
+                <p className="text-xs text-neutral-300 font-medium">Somerville, Massachusetts • Photo: Jeremy Kohm</p>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ export function BioAndPress() {
               A Symphony of Circus Acrobatics & Confectionery Precision
             </h2>
 
-            <div className="space-y-4 text-sm sm:text-base text-neutral-300 font-light leading-relaxed">
+            <div className="space-y-4 text-sm sm:text-base text-neutral-200 font-normal leading-relaxed">
               <p>
                 Starting as a passionate home baker, <strong className="text-white font-medium">Chef T Lawrence-Simon</strong> discovered a devotion to classical French Pâtisserie. Scouted for Food Network Canada’s <em>Great Chocolate Showdown</em>, T competed his way into the finals, proving himself as a creative confectionery force.
               </p>
@@ -162,7 +162,7 @@ export function BioAndPress() {
             <h3 className="font-serif text-2xl font-bold text-white mb-2">
               Crime Scene Kitchen Finalist
             </h3>
-            <p className="text-sm text-neutral-400 font-light leading-relaxed">
+            <p className="text-sm text-neutral-200 font-normal leading-relaxed">
               Decoded forensic culinary clues and recreated masterwork desserts under high pressure, earning praise from celebrity chef judges Curtis Stone and Yolanda Gampp.
             </p>
           </div>
@@ -179,7 +179,7 @@ export function BioAndPress() {
             <h3 className="font-serif text-2xl font-bold text-white mb-2">
               Great Chocolate Showdown Finalist
             </h3>
-            <p className="text-sm text-neutral-400 font-light leading-relaxed">
+            <p className="text-sm text-neutral-200 font-normal leading-relaxed">
               Showcased mastery in chocolate tempering, sugar sculpture, and complex flavor profiles to battle through the grand finale of this prestigious competition.
             </p>
           </div>
@@ -196,7 +196,7 @@ export function BioAndPress() {
                 Press & Appearances
               </h3>
             </div>
-            <span className="text-xs text-neutral-400">
+            <span className="text-xs text-neutral-300 font-medium">
               Featured in national and regional publications
             </span>
           </div>
@@ -211,23 +211,23 @@ export function BioAndPress() {
                 className="p-5 rounded-2xl bg-neutral-900/40 border border-neutral-800/80 hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group hover:bg-neutral-900/80"
               >
                 <div>
-                  <div className="flex items-center justify-between text-[11px] text-neutral-400 mb-2">
+                  <div className="flex items-center justify-between text-[11px] text-neutral-300 mb-2 font-medium">
                     <span className="font-bold uppercase tracking-wider text-amber-400">
                       {article.outlet}
                     </span>
-                    <span className="text-neutral-500 text-[10px]">{article.date}</span>
+                    <span className="text-neutral-300 text-[10px] font-mono">{article.date}</span>
                   </div>
 
                   <h4 className="font-serif text-sm font-semibold text-white group-hover:text-amber-400 transition-colors line-clamp-2 mb-2">
                     {article.title}
                   </h4>
 
-                  <p className="text-xs text-neutral-400 font-light leading-relaxed line-clamp-3">
+                  <p className="text-xs text-neutral-200 font-normal leading-relaxed line-clamp-3">
                     {article.description}
                   </p>
                 </div>
 
-                <div className="pt-4 mt-3 border-t border-neutral-800/60 flex items-center justify-between text-[11px] text-neutral-400 group-hover:text-amber-300">
+                <div className="pt-4 mt-3 border-t border-neutral-800/60 flex items-center justify-between text-[11px] text-neutral-200 font-medium group-hover:text-amber-300">
                   <span className="font-medium">{article.type}</span>
                   {article.link !== '#' && (
                     <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -247,7 +247,7 @@ export function BioAndPress() {
           <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-3">
             Supporters of Cirque du Soufflé
           </h3>
-          <p className="text-xs sm:text-sm text-neutral-400 max-w-xl mx-auto mb-8 font-light">
+          <p className="text-xs sm:text-sm text-neutral-200 max-w-xl mx-auto mb-8 font-normal">
             With eternal gratitude to the patrons, kickstarters, and friends who helped elevate the dream of combining the circus ring with culinary artistry:
           </p>
 
@@ -255,7 +255,7 @@ export function BioAndPress() {
             {supporters.map((name, i) => (
               <span
                 key={i}
-                className="text-xs px-3 py-1 rounded-full bg-neutral-950/70 border border-neutral-800 text-neutral-300 font-light hover:text-amber-400 hover:border-amber-500/30 transition-colors"
+                className="text-xs px-3 py-1 rounded-full bg-neutral-950/70 border border-neutral-800 text-neutral-200 font-normal hover:text-amber-400 hover:border-amber-500/30 transition-colors"
               >
                 {name}
               </span>

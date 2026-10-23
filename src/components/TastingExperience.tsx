@@ -52,20 +52,20 @@ export function TastingExperience() {
               5-Course Theatrical Dessert Tasting
             </h2>
 
-            <p className="text-neutral-300 text-sm sm:text-base font-light leading-relaxed">
+            <p className="text-neutral-200 text-sm sm:text-base font-normal leading-relaxed">
               Cirque du Soufflé redefines dessert dining into an immersive sensory performance. Combining French pastry technique with acrobatic theatricality, each evening hosts an intimate party of twelve guests.
             </p>
 
             <div className="space-y-3 pt-2">
-              <div className="flex items-center gap-3 text-sm text-neutral-300">
+              <div className="flex items-center gap-3 text-sm text-neutral-200 font-medium">
                 <Users className="w-5 h-5 text-amber-400 shrink-0" />
                 <span>Intimate seating limited to 12 guests per service</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-neutral-300">
+              <div className="flex items-center gap-3 text-sm text-neutral-200 font-medium">
                 <Wine className="w-5 h-5 text-amber-400 shrink-0" />
                 <span>Curated dessert wine and artisan mocktail pairings</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-neutral-300">
+              <div className="flex items-center gap-3 text-sm text-neutral-200 font-medium">
                 <Calendar className="w-5 h-5 text-amber-400 shrink-0" />
                 <span>Selected weekend evenings throughout the season</span>
               </div>
@@ -115,7 +115,7 @@ export function TastingExperience() {
               <h3 className="font-serif text-lg font-bold text-amber-400 uppercase tracking-wider">
                 Sample Tasting Menu
               </h3>
-              <span className="text-xs text-neutral-400 font-sans">
+              <span className="text-xs text-neutral-300 font-sans font-medium">
                 Chef T Lawrence-Simon
               </span>
             </div>
@@ -134,7 +134,7 @@ export function TastingExperience() {
                       {item.course}
                     </span>
                   </div>
-                  <p className="text-xs text-neutral-400 font-light leading-relaxed">
+                  <p className="text-xs text-neutral-200 font-normal leading-relaxed">
                     {item.description}
                   </p>
                 </div>

@@ -32,7 +32,7 @@ export function ProductCatalog() {
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-white mb-4">
             Cirque du Soufflé Gear
           </h2>
-          <p className="text-neutral-400 text-sm sm:text-base font-light">
+          <p className="text-neutral-200 text-sm sm:text-base font-normal">
             Wear the intersection of aerial performance and confectionery passion. Featuring original illustrations by Caroline Hu and Jun.
           </p>
         </div>
@@ -46,7 +46,7 @@ export function ProductCatalog() {
               className={`px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
                 activeCategory === cat.id
                   ? 'bg-amber-400 text-neutral-950 shadow-lg shadow-amber-400/20'
-                  : 'bg-neutral-900/90 text-neutral-300 hover:text-white border border-neutral-800 hover:border-neutral-700'
+                  : 'bg-neutral-900/90 text-neutral-200 hover:text-white border border-neutral-700 hover:border-neutral-500'
               }`}
             >
               {cat.label}

@@ -35,7 +35,7 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-neutral-300 max-w-2xl font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-neutral-200 max-w-2xl font-normal leading-relaxed">
               Founded by aerial acrobat and Certified Chocolatier <strong className="text-white font-medium">Chef T Lawrence-Simon</strong>. Trained under Chef Amaury Guichon in Las Vegas and Robuchon at the MGM Grand.
             </p>
 
@@ -64,19 +64,19 @@ export function Hero() {
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800">
                 <span className="text-[10px] uppercase font-bold text-amber-400 block tracking-wider">Trained By</span>
                 <p className="text-xs font-semibold text-white mt-0.5">Chef Amaury Guichon</p>
-                <span className="text-[10px] text-neutral-400">Las Vegas Pastry Academy</span>
+                <span className="text-[10px] text-neutral-300 font-medium">Las Vegas Pastry Academy</span>
               </div>
 
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800">
                 <span className="text-[10px] uppercase font-bold text-amber-400 block tracking-wider">Michelin Standard</span>
                 <p className="text-xs font-semibold text-white mt-0.5">Robuchon, MGM Grand</p>
-                <span className="text-[10px] text-neutral-400">Pastry Mastery</span>
+                <span className="text-[10px] text-neutral-300 font-medium">Pastry Mastery</span>
               </div>
 
               <div className="p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 col-span-2 sm:col-span-1">
                 <span className="text-[10px] uppercase font-bold text-amber-400 block tracking-wider">Certified</span>
                 <p className="text-xs font-semibold text-white mt-0.5">Ecole Chocolat</p>
-                <span className="text-[10px] text-neutral-400">Professional Chocolatier</span>
+                <span className="text-[10px] text-neutral-300 font-medium">Professional Chocolatier</span>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export function Hero() {
                       <h3 className="font-serif text-base font-bold text-white">
                         The Smoked Caramel Sphere
                       </h3>
-                      <p className="text-[11px] text-neutral-300">
+                      <p className="text-[11px] text-neutral-200 font-medium">
                         Table-side hot caramel theatrics • Somerville, MA
                       </p>
                     </div>

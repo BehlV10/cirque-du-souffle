@@ -80,14 +80,14 @@ export function ProductQuickView({ product, onClose }: ProductQuickViewProps) {
               ${product.price.toFixed(2)}
             </div>
 
-            <p className="text-sm text-neutral-300 font-light leading-relaxed mb-6">
+            <p className="text-sm text-neutral-200 font-normal leading-relaxed mb-6">
               {product.description}
             </p>
 
             {/* Options */}
             {product.variants?.sizes && (
               <div className="mb-4">
-                <span className="text-xs font-semibold uppercase text-neutral-400 block mb-2">
+                <span className="text-xs font-semibold uppercase text-neutral-200 block mb-2">
                   Select Size
                 </span>
                 <div className="flex flex-wrap gap-2">
@@ -99,7 +99,7 @@ export function ProductQuickView({ product, onClose }: ProductQuickViewProps) {
                       className={`text-xs font-bold px-3 py-1.5 rounded-lg border transition-all ${
                         selectedSize === size
                           ? 'bg-amber-400 text-neutral-950 border-amber-400'
-                          : 'bg-neutral-800 text-neutral-300 border-neutral-700 hover:border-neutral-500'
+                          : 'bg-neutral-800 text-neutral-200 border-neutral-700 hover:border-neutral-500'
                       }`}
                     >
                       {size}
@@ -111,7 +111,7 @@ export function ProductQuickView({ product, onClose }: ProductQuickViewProps) {
 
             {product.variants?.colors && (
               <div className="mb-6">
-                <span className="text-xs font-semibold uppercase text-neutral-400 block mb-2">
+                <span className="text-xs font-semibold uppercase text-neutral-200 block mb-2">
                   Color: <strong className="text-white">{selectedColor}</strong>
                 </span>
                 <div className="flex items-center gap-2">
@@ -136,7 +136,7 @@ export function ProductQuickView({ product, onClose }: ProductQuickViewProps) {
             {product.details && product.details.length > 0 && (
               <div className="pt-4 border-t border-neutral-800 space-y-1.5 mb-6">
                 {product.details.map((detail, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-xs text-neutral-400">
+                  <div key={idx} className="flex items-start gap-2 text-xs text-neutral-200">
                     <Check className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
                     <span>{detail}</span>
                   </div>
@@ -189,7 +189,7 @@ export function ProductQuickView({ product, onClose }: ProductQuickViewProps) {
               </button>
             </div>
 
-            <div className="flex items-center justify-between text-[11px] text-neutral-500 pt-1">
+            <div className="flex items-center justify-between text-[11px] text-neutral-300 font-medium pt-1">
               <span className="flex items-center gap-1">
                 <Truck className="w-3.5 h-3.5" /> Worldwide / Domestic Shipping
               </span>

@@ -83,7 +83,7 @@ export function CartDrawer() {
               </div>
               <button
                 onClick={() => setIsCartOpen(false)}
-                className="p-2 text-neutral-400 hover:text-white rounded-full hover:bg-neutral-800 transition-colors"
+                className="p-2 text-neutral-300 hover:text-white rounded-full hover:bg-neutral-800 transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -101,7 +101,7 @@ export function CartDrawer() {
                     <Sparkles className="w-3.5 h-3.5" /> You unlocked Free Shipping!
                   </span>
                 )}
-                <span className="text-neutral-500 font-mono text-[10px]">{Math.round(freeShippingProgress)}%</span>
+                <span className="text-neutral-300 font-mono text-[10px]">{Math.round(freeShippingProgress)}%</span>
               </div>
               <div className="w-full h-1.5 bg-neutral-800 rounded-full overflow-hidden">
                 <div
@@ -114,14 +114,14 @@ export function CartDrawer() {
             {/* Cart Items List */}
             <div className="flex-1 overflow-y-auto p-6 space-y-4">
               {items.length === 0 ? (
-                <div className="h-full flex flex-col items-center justify-center text-center text-neutral-400 py-12">
+                <div className="h-full flex flex-col items-center justify-center text-center text-neutral-200 py-12">
                   <div className="w-16 h-16 rounded-full bg-neutral-800/80 flex items-center justify-center mb-4">
-                    <ShoppingBag className="w-8 h-8 text-neutral-600" />
+                    <ShoppingBag className="w-8 h-8 text-neutral-400" />
                   </div>
                   <h3 className="text-white font-serif font-bold text-lg mb-1">
                     Your bag is empty
                   </h3>
-                  <p className="text-xs text-neutral-400 max-w-xs mb-6">
+                  <p className="text-xs text-neutral-200 font-normal max-w-xs mb-6">
                     Indulge in handcrafted bonbons, macarons, or official Cirque aerial merchandise.
                   </p>
                   <a
@@ -156,7 +156,7 @@ export function CartDrawer() {
                         {item.product.name}
                       </h4>
                       {(item.selectedSize || item.selectedColor) && (
-                        <p className="text-[11px] text-neutral-400">
+                        <p className="text-[11px] text-neutral-200 font-medium">
                           {item.selectedSize && `Size: ${item.selectedSize}`}
                           {item.selectedSize && item.selectedColor && ' • '}
                           {item.selectedColor && `Color: ${item.selectedColor}`}
@@ -189,7 +189,7 @@ export function CartDrawer() {
                     {/* Remove */}
                     <button
                       onClick={() => removeFromCart(item.cartItemId)}
-                      className="p-1.5 text-neutral-500 hover:text-rose-400 transition-colors"
+                      className="p-1.5 text-neutral-300 hover:text-rose-400 transition-colors"
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>
@@ -201,7 +201,7 @@ export function CartDrawer() {
             {/* Footer Summary & Checkout */}
             {items.length > 0 && (
               <div className="p-6 border-t border-neutral-800 bg-neutral-950/80 space-y-3">
-                <div className="space-y-1.5 text-xs text-neutral-400">
+                <div className="space-y-1.5 text-xs text-neutral-200 font-normal">
                   <div className="flex justify-between">
                     <span>Subtotal</span>
                     <span className="text-white font-medium">${subtotal.toFixed(2)}</span>
@@ -241,7 +241,7 @@ export function CartDrawer() {
                   )}
                 </button>
 
-                <p className="text-center text-[10px] text-neutral-500 flex items-center justify-center gap-1.5">
+                <p className="text-center text-[10px] text-neutral-300 font-medium flex items-center justify-center gap-1.5">
                   <ShieldCheck className="w-3 h-3 text-emerald-400" />
                   Encrypted 256-bit Stripe Payment Gateway
                 </p>

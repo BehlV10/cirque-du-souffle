@@ -48,7 +48,7 @@ export function CheckoutModal({ onClose, onSuccess }: CheckoutModalProps) {
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 text-neutral-400 hover:text-white rounded-full hover:bg-neutral-800 transition-colors"
+            className="p-1.5 text-neutral-300 hover:text-white rounded-full hover:bg-neutral-800 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -69,72 +69,72 @@ export function CheckoutModal({ onClose, onSuccess }: CheckoutModalProps) {
 
             {/* Customer Information */}
             <div className="space-y-3">
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-200">
                 Contact & Shipping Details
               </h4>
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="text-[11px] text-neutral-400 block mb-1">Full Name</label>
+                  <label className="text-[11px] text-neutral-200 font-medium block mb-1">Full Name</label>
                   <input
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-800 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
                   />
                 </div>
                 <div>
-                  <label className="text-[11px] text-neutral-400 block mb-1">Email Address</label>
+                  <label className="text-[11px] text-neutral-200 font-medium block mb-1">Email Address</label>
                   <input
                     type="email"
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-800 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="text-[11px] text-neutral-400 block mb-1">Street Address</label>
+                <label className="text-[11px] text-neutral-200 font-medium block mb-1">Street Address</label>
                 <input
                   type="text"
                   required
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full px-3 py-2 bg-neutral-950 border border-neutral-800 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
+                  className="w-full px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
                 />
               </div>
 
               <div className="grid grid-cols-3 gap-3">
                 <div>
-                  <label className="text-[11px] text-neutral-400 block mb-1">City</label>
+                  <label className="text-[11px] text-neutral-200 font-medium block mb-1">City</label>
                   <input
                     type="text"
                     required
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-800 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
                   />
                 </div>
                 <div>
-                  <label className="text-[11px] text-neutral-400 block mb-1">State</label>
+                  <label className="text-[11px] text-neutral-200 font-medium block mb-1">State</label>
                   <input
                     type="text"
                     required
                     value={formData.state}
                     onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-800 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
                   />
                 </div>
                 <div>
-                  <label className="text-[11px] text-neutral-400 block mb-1">ZIP</label>
+                  <label className="text-[11px] text-neutral-200 font-medium block mb-1">ZIP</label>
                   <input
                     type="text"
                     required
                     value={formData.zip}
                     onChange={(e) => setFormData({ ...formData, zip: e.target.value })}
-                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-800 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
+                    className="w-full px-3 py-2 bg-neutral-950 border border-neutral-700 rounded-lg text-sm text-white focus:border-amber-400 focus:outline-none"
                   />
                 </div>
               </div>
@@ -142,7 +142,7 @@ export function CheckoutModal({ onClose, onSuccess }: CheckoutModalProps) {
 
             {/* Payment Info */}
             <div className="space-y-3 pt-2">
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-400 flex items-center justify-between">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-neutral-200 flex items-center justify-between">
                 <span>Payment Method</span>
                 <span className="text-[10px] text-emerald-400 flex items-center gap-1 font-normal lowercase">
                   <ShieldCheck className="w-3.5 h-3.5" /> 256-bit encrypted
@@ -179,7 +179,7 @@ export function CheckoutModal({ onClose, onSuccess }: CheckoutModalProps) {
 
             {/* Order Summary Line */}
             <div className="pt-2 border-t border-neutral-800 flex items-center justify-between text-sm">
-              <span className="text-neutral-400">Total Charged</span>
+              <span className="text-neutral-200 font-medium">Total Charged</span>
               <span className="font-bold text-lg text-amber-400">${total.toFixed(2)}</span>
             </div>
 
@@ -213,31 +213,31 @@ export function CheckoutModal({ onClose, onSuccess }: CheckoutModalProps) {
               <h2 className="font-serif text-2xl font-bold text-white mb-1">
                 Thank you, {formData.name}!
               </h2>
-              <p className="text-xs text-neutral-400">
+              <p className="text-xs text-neutral-200 font-normal">
                 Order <strong className="text-amber-400 font-mono">{orderNumber}</strong> has been received and sent to Chef T’s Somerville kitchen.
               </p>
             </div>
 
             {/* Receipt Summary */}
             <div className="p-4 rounded-2xl bg-neutral-950 border border-neutral-800 text-left space-y-2 text-xs">
-              <div className="flex justify-between text-neutral-400">
+              <div className="flex justify-between text-neutral-300 font-medium">
                 <span>Recipient:</span>
                 <span className="text-white font-medium">{formData.name} ({formData.email})</span>
               </div>
-              <div className="flex justify-between text-neutral-400">
+              <div className="flex justify-between text-neutral-300 font-medium">
                 <span>Shipping to:</span>
                 <span className="text-white font-medium">{formData.address}, {formData.city}, {formData.state} {formData.zip}</span>
               </div>
-              <div className="flex justify-between text-neutral-400">
+              <div className="flex justify-between text-neutral-300 font-medium">
                 <span>Items:</span>
                 <span className="text-white font-medium">{items.length} product(s)</span>
               </div>
-              <div className="flex justify-between text-neutral-400">
+              <div className="flex justify-between text-neutral-300 font-medium">
                 <span>Shipping:</span>
                 <span className="text-white font-medium">{shipping === 0 ? 'Free' : `$${shipping.toFixed(2)}`}</span>
               </div>
               <div className="pt-2 border-t border-neutral-800 flex justify-between font-bold text-sm">
-                <span className="text-neutral-300">Amount Paid:</span>
+                <span className="text-neutral-200">Amount Paid:</span>
                 <span className="text-amber-400">${total.toFixed(2)} USD</span>
               </div>
             </div>

@@ -9,7 +9,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-neutral-950 border-t border-neutral-800/80 pt-16 pb-12 text-neutral-400">
+    <footer className="bg-neutral-950 border-t border-neutral-800/80 pt-16 pb-12 text-neutral-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-neutral-900">
           {/* Brand Info */}
@@ -25,7 +25,7 @@ export function Footer() {
               </span>
             </div>
 
-            <p className="text-xs text-neutral-400 max-w-sm font-light leading-relaxed">
+            <p className="text-xs text-neutral-200 max-w-sm font-normal leading-relaxed">
               Pastry theatrics, artisanal single-origin chocolate collections, and multi-course dessert dining by Certified Chocolatier Chef T Lawrence-Simon. Somerville, Massachusetts.
             </p>
 
@@ -34,7 +34,7 @@ export function Footer() {
                 href="https://instagram.com/cirquedusouffle"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 hover:border-amber-400 text-neutral-400 hover:text-amber-400 flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 hover:border-amber-400 text-neutral-300 hover:text-amber-400 flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="w-4 h-4" />
@@ -47,7 +47,7 @@ export function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-wider text-white font-serif">
               Explore
             </h4>
-            <ul className="space-y-2 text-xs font-light">
+            <ul className="space-y-2 text-xs font-normal text-neutral-200">
               <li>
                 <a href="#shop" className="hover:text-amber-400 transition-colors">
                   Artisan Bonbons & Merch
@@ -81,7 +81,7 @@ export function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-wider text-white font-serif">
               Modern Architecture
             </h4>
-            <p className="text-xs text-neutral-400 font-light leading-relaxed">
+            <p className="text-xs text-neutral-200 font-normal leading-relaxed">
               Engineered with <strong>Next.js 15</strong>, <strong>Tailwind CSS</strong>, and <strong>Stripe Checkout</strong>. Fully versioned on GitHub with automated continuous deployment.
             </p>
             <div className="flex items-center gap-2 text-xs text-emerald-400 pt-1">
@@ -92,13 +92,13 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-300">
           <p>© {new Date().getFullYear()} Cirque du Soufflé / Chef T Lawrence-Simon. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-1 text-neutral-400 hover:text-amber-400 transition-colors text-xs font-medium"
+              className="flex items-center gap-1 text-neutral-200 hover:text-amber-400 transition-colors text-xs font-semibold"
             >
               <span>Back to Top</span>
               <ArrowUp className="w-3.5 h-3.5" />

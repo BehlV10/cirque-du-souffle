@@ -86,7 +86,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
             </span>
           </div>
 
-          <p className="text-xs text-neutral-400 line-clamp-2 mb-4 font-light leading-relaxed">
+          <p className="text-xs text-neutral-200 line-clamp-2 mb-4 font-normal leading-relaxed">
             {product.description}
           </p>
 
@@ -96,7 +96,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
               {/* Size Selector */}
               {product.variants.sizes && (
                 <div className="flex items-center gap-1.5">
-                  <span className="text-[11px] uppercase tracking-wider text-neutral-400 w-10">
+                  <span className="text-[11px] uppercase tracking-wider text-neutral-300 font-medium w-10">
                     Size:
                   </span>
                   <div className="flex flex-wrap gap-1">
@@ -108,7 +108,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
                         className={`text-[10px] font-bold px-2 py-0.5 rounded border transition-all ${
                           selectedSize === size
                             ? 'bg-amber-400 text-neutral-950 border-amber-400 shadow-sm'
-                            : 'bg-neutral-900 text-neutral-300 border-neutral-700 hover:border-neutral-500'
+                            : 'bg-neutral-900 text-neutral-200 border-neutral-700 hover:border-neutral-500'
                         }`}
                       >
                         {size}
@@ -121,7 +121,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
               {/* Color Selector */}
               {product.variants.colors && (
                 <div className="flex items-center gap-1.5">
-                  <span className="text-[11px] uppercase tracking-wider text-neutral-400 w-10">
+                  <span className="text-[11px] uppercase tracking-wider text-neutral-300 font-medium w-10">
                     Color:
                   </span>
                   <div className="flex items-center gap-1.5">
@@ -140,7 +140,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
                       />
                     ))}
                     {selectedColor && (
-                      <span className="text-[10px] text-neutral-400 ml-1">
+                      <span className="text-[10px] text-neutral-300 font-medium ml-1">
                         {selectedColor}
                       </span>
                     )}
