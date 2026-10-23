@@ -28,6 +28,11 @@ export function CartDrawer() {
 
   const handleCheckout = async () => {
     setIsLoading(true);
+    if (window.location.hostname.includes('github.io')) {
+      setShowCheckoutModal(true);
+      setIsLoading(false);
+      return;
+    }
     try {
       const res = await fetch('/api/checkout', {
         method: 'POST',
