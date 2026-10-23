@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Calendar, Users, Wine, Sparkles, ArrowRight, MessageSquare } from 'lucide-react';
 
 export function TastingExperience() {
@@ -70,7 +71,25 @@ export function TastingExperience() {
               </div>
             </div>
 
-            <div className="pt-4 flex flex-col sm:flex-row gap-4">
+            {/* Visual Dining Atmosphere Card */}
+            <div
+              className="relative w-full h-44 rounded-2xl overflow-hidden border border-neutral-800 shadow-xl my-2"
+              style={{ minHeight: '170px', position: 'relative' }}
+            >
+              <Image
+                src="https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1626057426438-0O919FWL2NIQ2NHQJEXL/20210517_171946-03.jpeg"
+                alt="Cirque du Souffle Tasting Dining Room in Somerville"
+                fill
+                className="object-cover"
+                style={{ objectFit: 'cover' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-4 text-xs font-serif font-semibold text-amber-300">
+                The Intimate Tasting Parlor • Somerville, MA
+              </div>
+            </div>
+
+            <div className="pt-2 flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
                 className="px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:brightness-110 text-neutral-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl shadow-amber-500/20 transition-all group"

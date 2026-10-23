@@ -2,14 +2,13 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Camera, Sparkles, Filter } from 'lucide-react';
+import { Camera } from 'lucide-react';
 
 interface GalleryItem {
   src: string;
   title: string;
   subtitle: string;
   category: 'pastry' | 'circus' | 'plating';
-  span?: string;
 }
 
 export function Gallery() {
@@ -21,7 +20,6 @@ export function Gallery() {
       title: 'Table-Side Warm Caramel Pour',
       subtitle: '5-Course Tasting Signature Course',
       category: 'plating',
-      span: 'md:col-span-2 md:row-span-2',
     },
     {
       src: 'https://images.squarespace-cdn.com/content/v1/5e0962d434a3db0ec475f876/1583695051853-GWOR8M4H52DCGYRQ9G97/79988796_1456871671132268_8500130343418855424_n.jpg',
@@ -124,8 +122,8 @@ export function Gallery() {
               onClick={() => setFilter(cat.id as any)}
               className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
                 filter === cat.id
-                  ? 'bg-amber-400 text-neutral-950 shadow-md shadow-amber-400/20'
-                  : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
+                  ? 'bg-amber-400 text-neutral-950 font-bold shadow-md shadow-amber-400/20'
+                  : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800 hover:border-neutral-700'
               }`}
             >
               {cat.label}
@@ -133,14 +131,12 @@ export function Gallery() {
           ))}
         </div>
 
-        {/* Photo Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Uniform, Gap-Free Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((img, i) => (
             <div
               key={i}
-              className={`group relative rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-950 w-full h-72 sm:h-80 ${
-                img.span && filter === 'all' ? img.span : ''
-              }`}
+              className="group relative rounded-3xl overflow-hidden border border-neutral-800 hover:border-amber-500/40 bg-neutral-950 w-full h-72 sm:h-80 shadow-lg transition-all duration-300"
               style={{ minHeight: '280px', position: 'relative' }}
             >
               <Image
